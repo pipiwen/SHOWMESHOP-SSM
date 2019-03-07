@@ -8,7 +8,6 @@ import java.util.List;
 @MyBatisDao
 public interface UserDao {
     List<User> findListAll();
-    User get(User user);
     void add(User user);
     void edit(User user);
     void delete(User user);

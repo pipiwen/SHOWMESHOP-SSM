@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--id属性和mapper的namespace唯一的表示了应用中的sql语句-->
 <mapper namespace="com.syw.demo1.dao.UserDao">
-<select id="findListAll" resultType="user">
+<select id="findListAll" resultType="com.syw.demo1.entity.User">
     select id,name,password
            from user1
 </select>
@@ -20,7 +20,7 @@
     <delete id="delete">
         delete from user1 where id=#{id}
     </delete>
- <select id="getByPassword" resultType="user">
+ <select id="getByPassword" resultType="com.syw.demo1.entity.User">
      select name from user1 where name=#{name} and password=#{password}
 
  </select>

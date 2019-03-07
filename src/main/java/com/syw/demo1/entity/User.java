@@ -1,6 +1,7 @@
 package com.syw.demo1.entity;
 
 import lombok.Data;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.io.Serializable;
 
